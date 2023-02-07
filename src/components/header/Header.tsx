@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import './Header.css'
 import logo from '../../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [burger, setBurger] = useState<boolean>(false)
@@ -8,9 +10,9 @@ const Header = () => {
         <header className={burger ? 'header active' : 'header'}>   
             <div className="container">
                 <div className="header__logo">
-                    <a href="/">
+                    <Link to="/">
                         <img src={logo} alt="" />
-                    </a>                    
+                    </Link>                    
                 </div>
                 <div 
                     className={burger ? 'header__burger active' : 'header__burger'}
@@ -21,19 +23,19 @@ const Header = () => {
                 <div className={burger ? 'header__menu active' : 'header__menu'}>
                     <ul className='header__menu_list'>
                         <li>
-                            <a className='active' href="/">
+                            <NavLink to="/">
                                 Главная 
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="/">
+                            <NavLink to="/catalog">
                                 Экскурсии
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="/">
+                            <NavLink to="*">
                                 Личный кабинет
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

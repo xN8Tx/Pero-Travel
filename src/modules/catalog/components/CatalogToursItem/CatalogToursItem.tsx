@@ -41,7 +41,7 @@ const CatalogToursItem = () => {
                     </TextBig>
                 </div>
                 <div className="CatalogToursItemWrapperButtons">
-                    <MainButton>Подробнее</MainButton>
+                    <MainButton to='/product'>Подробнее</MainButton>
                     <LikeButton />
                 </div>
             </div>

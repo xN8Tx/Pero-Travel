@@ -37,7 +37,7 @@ const HomeRequest = () => {
                         />
                     </div>
                     <div className="home-request__modal_btn">
-                        <MainButton>Оставить заявку</MainButton>
+                        <MainButton to='/'>Оставить заявку</MainButton>
                     </div>
                 </div>
             </div>

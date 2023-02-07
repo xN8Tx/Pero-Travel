@@ -55,7 +55,7 @@ const HomeTypes = () => {
                 </div>
                 <div className="home-types__undertext">
                     <TextBig style={{color: '#282828'}}>Выбирайте на нашем сайте экскурсию, которая подходит именно вам <br/> и записывайтесь онлайн без очередей, просто и быстро!</TextBig>
-                    <MainButton>К экскурсиям</MainButton>
+                    <MainButton to='/catalog'>К экскурсиям</MainButton>
                 </div>
             </div>
         </section>

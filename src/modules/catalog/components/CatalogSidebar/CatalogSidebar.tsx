@@ -104,7 +104,7 @@ const CatalogSidebar = () => {
             <div className='divider'></div>
             
             <div className="catalog-sidebar__btn">
-                <MainButton>Показать</MainButton>
+                <MainButton to='/catalog'>Показать</MainButton>
                 <SmallLink>
                     Сбросить фильтры
                 </SmallLink>

@@ -1,14 +1,19 @@
 import React from 'react';
 import cl from './MainButton.module.css'
 import { IUI } from '../../../types/types';
+import { Link } from 'react-router-dom';
 
-const MainButton = ({children, ...props}: IUI) => {
+interface IMainButton extends IUI {
+    to: string;
+}
+
+const MainButton = ({children, to, ...props}: IMainButton) => {
     return (
-        <a className={cl.MainButton} {...props}>
+        <Link to={to} className={cl.MainButton} {...props}>
             <p>
                 {children}
             </p>
-        </a>
+        </Link>
     );
 };
 

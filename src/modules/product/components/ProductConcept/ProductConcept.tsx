@@ -11,7 +11,7 @@ const ProductConcept = () => {
                 <h2 className='product-concept__upheading'>Автобусный тур</h2>
                 <h1 className='product-concept__heading'>ЗОЛОТОЕ КОЛЬЦО АБХАЗИИ (ИЗ АДЛЕРА)</h1> 
                 <div className="product-concept__btns">
-                    <MainButton>К другим экскурсиям</MainButton>
+                    <MainButton to='/catalog'>К другим экскурсиям</MainButton>
                     <LikeButton />
                 </div>
             </div>

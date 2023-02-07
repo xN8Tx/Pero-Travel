@@ -32,7 +32,7 @@ const HomeConcept = () => {
                                 <p className='together'>вместе с</p>
                                 <p className='name'>PERO TRAVEL</p>
                             </h2>
-                            <MainButton>К экскурсия</MainButton>
+                            <MainButton to='/catalog'>К экскурсия</MainButton>
                         </div>
                         <div className="home-concept__content_media">
                             <a href="/">

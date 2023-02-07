@@ -43,7 +43,7 @@ const ProductExpenses = () => {
                     /> 
                 </div>
                 <div className="product-expenses__form_btn">
-                    <MainButton>Забронировать</MainButton>
+                    <MainButton to='/product'>Забронировать</MainButton>
                     <LikeButton />
                 </div>
             </div>

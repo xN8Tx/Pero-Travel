@@ -1,0 +1,10 @@
+.error {
+    width: 100%;
+    height: calc(100vh - 175px - 70px);
+}
+
+.error > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
