@@ -1,0 +1,52 @@
+.home-request {
+    width: 100%;
+    height: 100vh;
+    background: url('../../../../images/requestBg.png') 0 0/cover no-repeat;
+}
+
+.home-request__modal {
+    float: right;
+    width: 560px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.home-request__modal_form {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.home-request__modal_form input:not(:first-child){
+    margin-top: 45px;
+}
+
+.home-request__modal_btn {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .home-request__modal {
+        width: 400px;
+    }
+}
+
+@media (max-width: 428px) {
+    .home-request > .container{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .home-request__modal {
+        float: none;
+        width: 380px;
+        height: 640px;
+    }
+}

@@ -1,0 +1,38 @@
+.MainButton {
+    display: inline-block;
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 60px;
+}
+
+.MainButton p {
+    width: 100%;
+    position: relative;
+    padding: 13px 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+}
+
+
+.MainButton p::after {
+    position: absolute;
+    right: 20px;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../../../images/Arrow.svg') center no-repeat;
+    opacity: 0;
+    transform: translate(0);
+    transition: all ease-in-out 0.3s;
+}
+
+.MainButton:hover p::after {
+    opacity: 1;
+    transform: translate(5px);
+}   

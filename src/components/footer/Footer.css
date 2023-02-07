@@ -1,0 +1,131 @@
+.footer {
+    width: 100%;
+    height: 175px;
+}
+
+.footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav > a:not(:first-child) {
+    margin-top: 8px;
+}
+
+.footer__links > a:not(:first-child) {
+    margin-top: 8px;
+}
+
+.footer__links > a {
+    position: relative;
+}
+
+.footer__links > a::after {
+    top: -3px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    display: block;
+}
+
+.footer__links > #whatsapp::after {
+    top: -3px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    display: block;
+    background: url('../../images/whatsapp.svg') 0 0/contain no-repeat;
+}
+
+.footer__links > #telegram::after {
+    top: -3px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    display: block;
+    background: url('../../images/telegram.svg') 0 0/contain no-repeat;
+}
+
+.footer__email > #email {
+    position: relative;
+}
+
+.footer__email > #email::after {
+    top: -3px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    display: block;
+    background: url('../../images/email.svg') 0 0/contain no-repeat;
+}
+
+.footer__email_icons {
+    margin-top: 20px;
+    margin-left: -25px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__email_icons > a:not(:first-child) > svg {
+    margin-left: 15px;
+}
+
+.footer__email_icons > a:nth-child(1n) > svg > path {
+    stroke: #E59B06;
+}
+
+.footer__email_icons > a:nth-child(2n) > svg > path {
+    stroke: #BC0000;
+}
+
+.footer__email_icons > a:nth-child(3n) > svg > path {
+    stroke: #17C1BC;
+}
+
+
+@media (max-width: 418px) {
+    .footer {
+        width: 100%;
+        height: 420px;
+    }
+    .footer > .container {
+        /* margin: 50px auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        order: 2;
+    }
+    .footer__email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

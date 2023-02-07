@@ -1,0 +1,48 @@
+.catalog-tours {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.catalog-tours__title {
+    margin-bottom: 20px;
+}
+
+.catalog-tours__pagination {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog-tours__pagination_wrapper {
+    display: flex;
+}
+
+.catalog-tours__pagination_list {
+    margin: 0 6px;
+}
+
+.catalog-tours__pagination_list > span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+}
+
+.catalog-tours__pagination_list > span.active{
+    color: #0499DD;
+}
+
+.catalog-tours__pagination_list > span:not(:first-child){
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .catalog-tours {
+        margin-left: 0;
+        margin-bottom: 150px;
+    }
+}

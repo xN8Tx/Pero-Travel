@@ -1,0 +1,134 @@
+.header {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: transparent;
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    object-fit: cover;
+    width: 40px;
+    height: 58px;
+}
+
+.header__menu_list {
+    display: flex;
+}
+
+.header__menu_list > li:not(:first-child) {
+    padding-left: 20px;
+}
+
+.header__menu_list > li > a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition: all ease-in 0.3s;
+}
+
+.header__menu_list li a:hover {
+    color: #FFC700;;
+}
+
+.header__menu_list li a.active {
+    color: #FFC700;
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header.active {
+        background: rgba(47, 47, 47, 0.826)
+    } 
+    .header__menu {
+        display: none;
+    }
+    .header__menu.active {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        height: calc(100vh - 70px);
+        width: 100%;
+        background: rgba(47, 47, 47, 0.826)
+    }
+
+    .header__menu.active .header__menu_list {
+        display: block;
+        margin: 10%;
+    }
+
+    .header__menu.active .header__menu_list > li { 
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__burger > span {
+        position: relative;
+        transition: all ease-in-out 0.1s;
+        display: block;
+        width: 40px;
+        height: 5px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .header__burger > span::before {
+        bottom: 10px;
+        display: block;
+        content: ' ';
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .header__burger > span::after {
+        top: 10px;
+        display: block;
+        width: 40px;
+        content: ' ';
+        position: absolute;
+        height: 5px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .header__burger.active span {
+        background: transparent;
+    }
+
+    .header__burger.active span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .header__burger.active span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+}

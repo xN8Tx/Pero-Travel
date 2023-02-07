@@ -1,0 +1,27 @@
+
+.ButtonsLike {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #0499DD;
+}
+
+.ButtonsLike > svg > path {
+    stroke: #0499DD;
+}
+
+.ButtonsLike {
+    margin-left: 10px;
+}
+
+.ButtonsLike.active {
+    background: #EDEDED;
+    border: none;
+}
+
+.ButtonsLike.active > svg > path {
+    stroke: white;
+}

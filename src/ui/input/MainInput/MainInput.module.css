@@ -1,0 +1,25 @@
+.MainInput {
+    width: 360px;
+    height: 15px;
+    border-bottom: 1px solid #FFFFFF;
+    background: transparent;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .MainInput {
+        width: 316px;
+    }
+}
+
+@media (max-width: 428px) {
+    .MainInput {
+        width: 294px;
+    }
+}

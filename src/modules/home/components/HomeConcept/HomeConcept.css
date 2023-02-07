@@ -1,0 +1,210 @@
+.home-concept {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.home-concept__wrapper {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 150px);
+}
+
+.container {
+    height: 100%;
+}
+
+.home-concept__wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.home-concept__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-concept__content_tagline h2 {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.home-concept__content_tagline h2 p{
+    display: block;
+    color: white;
+}
+
+.home-concept__content_tagline h2 p.travel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.home-concept__content_tagline h2 p.together {
+    position: absolute;
+    right: 0;
+    top: 33px;
+    font-family: 'mr_KindlyJasmineG';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: #FFC700;
+}
+
+.home-concept__content_tagline h2 p.name {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.home-concept__content_media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-concept__content_media a {
+    display: block;
+}
+
+.home-concept__content_media a:not(:first-child) {
+    margin-top: 8px;
+}
+
+.home-concept__content_media a svg path{
+    display: block;
+    fill:white;
+    transition: all ease-in-out 0.3s;
+}
+
+.home-concept__content_media a svg:hover path{
+    display: block;
+    fill:#FFC700;
+}
+
+.home-concept__changer {
+    position: absolute;
+    top: 75%;
+    right: 0;
+    height: 187px;
+    display: flex;
+    align-items: center;
+    transition: all ease-in 0.3s;
+}
+
+.home-concept__changer_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.33);
+}
+
+.home-concept__changer_item .play {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    animation: playAnimation 2s linear infinite alternate-reverse;
+}
+
+.home-concept__changer_item:hover .play {
+    animation: none;
+    transform: scale(1.2);
+}
+
+.home-concept__changer_item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.home-concept__changer_item img {
+    width: 360px;
+    height: 220px;
+    object-fit: cover;
+}
+
+@keyframes playAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .home-concept__content_tagline h2 p.travel {
+        font-size: 48px;
+    }
+
+    .home-concept__content_tagline h2 p.together {
+        font-size: 48px;
+    }
+
+    .home-concept__content_tagline h2 p.name {
+        font-size: 96px;
+    }
+
+    .home-concept__changer_item img {
+        width: 295px;
+        height: 187px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 428px) {
+    .home-concept {
+        height: 120vh;
+    }
+    .home-concept__wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .home-concept__changer {
+        position: absolute;
+        top: 75%;
+        right: 0;
+        height: 187px;
+        display: flex;
+        align-items: center;
+        transition: all ease-in 0.3s;
+    }
+    
+    .home-concept__content {
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home-concept__content_tagline h2 p.travel {
+        font-size: 36px;
+    }
+
+    .home-concept__content_tagline h2 p.name {
+        font-size: 78px;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-concept__content_tagline {
+        margin-top: 60px;
+    }
+}

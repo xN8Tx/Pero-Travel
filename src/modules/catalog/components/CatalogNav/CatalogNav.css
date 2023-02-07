@@ -1,0 +1,104 @@
+.catalog-nav {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.catalog-nav__wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    min-height: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px;
+}
+
+.catalog-nav__tabs {
+    display: flex;
+}
+
+.catalog-nav__tabs_tab {
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+    margin-top: 0 !important;
+}
+
+.catalog-nav__tabs_tab::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #D4D4D4;
+    border-radius: 4px;
+}
+
+.catalog-nav__tabs_tab.active {
+    color: #0499DD;
+}
+
+.catalog-nav__tabs_tab.active::after {
+    background: #0499DD;
+}
+
+.catalog-nav__input {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.catalog-nav__input input:not(:first-child) {
+    margin-left: 20px;
+}
+
+.catalog-nav__input button {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .catalog-nav__input > #date {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .catalog-nav__input input:not(:first-child) {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .catalog-nav__input button {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 428px) {
+    .catalog-nav__input input:not(:first-child) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .catalog-nav__input > #date {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .catalog-nav__input button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .catalog-nav__tabs_tab {
+        font-size: 12px;
+    }
+}

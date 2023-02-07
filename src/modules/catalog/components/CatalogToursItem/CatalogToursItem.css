@@ -1,0 +1,102 @@
+.CatalogToursItem {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.CatalogToursItemPhoto > img {
+    width: 240px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.CatalogToursItemWrapper {
+    margin-left: 40px;
+}
+
+.CatalogToursItemWrapperTitle > p {
+    color: #FFC700;
+    margin-top: 25px;
+}
+
+.CatalogToursItemWrapperTitle > h3 {
+    color: #282828;
+}
+
+.CatalogToursItemWrapperCost {
+    margin-top: 20px;
+}
+
+.CatalogToursItemWrapperCost > span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0499DD;
+}
+
+.CatalogToursItemWrapperCost > span:not(:first-child) {
+    margin-left: 10px;
+}
+
+.CatalogToursItemWrapperCost > span > img {
+    margin-right: 5px;
+}
+
+.CatalogToursItemWrapperDescription {
+    border-left: 3px solid #0499DD;
+    margin-top: 30px;
+}
+
+.CatalogToursItemWrapperDescription > p {
+    color: #282828;
+    margin-left: 20px;
+    max-width: 430px;
+}
+
+.CatalogToursItemWrapperButtons {
+    display: flex;
+    margin: 20px 0;
+}
+
+.CatalogToursItemWrapperButtonsLike {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #0499DD;
+}
+
+.CatalogToursItemWrapperButtonsLike > svg > path {
+    stroke: #0499DD;
+}
+
+.CatalogToursItemWrapperButtonsLike {
+    margin-left: 10px;
+}
+
+.CatalogToursItemWrapperButtonsLike.active {
+    background: #EDEDED;
+    border: none;
+}
+
+.CatalogToursItemWrapperButtonsLike.active > svg > path {
+    stroke: white;
+}
+
+@media (max-width: 428px) {
+    .CatalogToursItem {
+        flex-direction: column;
+    }
+    .CatalogToursItemPhoto > img {
+        width: 100%;
+        height: 240px;
+        border-radius: 10px 10px 0 ;
+    }
+}

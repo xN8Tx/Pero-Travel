@@ -1,0 +1,63 @@
+.CatalogSidebarFilter {
+    display: flex;
+    flex-direction: column;
+}
+
+.CatalogSidebarFilterTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CatalogSidebarFilterTitle > h3{
+    color: #282828;
+}
+
+.CatalogSidebarFilterButton {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CatalogSidebarFilterButton > span {
+    display: block;
+    width: 14px;
+    height: 2px;
+    background: #0499DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.CatalogSidebarFilterButton.active > span::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 14px;
+    background: #0499DD;
+    border-radius: 5px;
+}
+
+.CatalogSidebarFilterContent {
+    margin-top: 20px;
+    display: block;
+}
+
+.CatalogSidebarFilterContent.active {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .CatalogSidebarFilter {
+        width: 40%;
+    }
+}
+
+@media (max-width: 428px) {
+    .CatalogSidebarFilter {
+        width: 100%;
+    }
+}

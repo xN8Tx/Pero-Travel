@@ -1,0 +1,18 @@
+.SecondButton {
+    width: 235px;
+    height: 50px;
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.SecondButton:hover {
+    background: linear-gradient(92.71deg,#0375aa 0,#11817e 100%);;
+}

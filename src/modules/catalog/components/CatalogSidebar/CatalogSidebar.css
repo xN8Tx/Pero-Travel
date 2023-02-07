@@ -1,0 +1,106 @@
+.catalog-sidebar {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    padding: 25px 35px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.catalog-sidebar__title {
+    margin: 30px 0;
+}
+.catalog-sidebar__item.cost {
+    margin-top: 31px;
+}
+
+.catalog-sidebar__item_shown {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.catalog-sidebar__item_shown > span:last-child {
+    margin-left: 15px;
+}
+
+.catalog-sidebar__item_value {
+    width: 105px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282828;
+}
+
+.divider {
+    width: 225px;
+    height: 1px;
+    background: #EDEDED;
+    margin: 40px 0;
+}
+
+.catalog-sidebar__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-sidebar__item {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-sidebar__item:not(:first-child) {
+    margin-top: 5px;
+}
+
+.catalog-sidebar__item > label {
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282828;
+}
+
+.catalog-sidebar__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog-sidebar__btn > a:last-child {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .catalog-sidebar {
+        max-width: none;
+        width: 100%;
+        height: 600px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 428px) {
+    .catalog-sidebar {
+        max-width: none;
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+    }
+}
